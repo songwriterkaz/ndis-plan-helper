@@ -1,0 +1,33 @@
+:root{--bg:#fbf6f4;--card:#fff;--ink:#3b3340;--soft:#6e6474;--accent:#c9668a;--accent2:#7fae9c;--line:#eadfe3;--fs:18px}
+body.contrast{--bg:#000;--card:#111;--ink:#fff;--soft:#ffe36e;--accent:#ffe36e;--accent2:#7fffd4;--line:#fff}
+body.large{--fs:23px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--ink);font:var(--fs)/1.5 system-ui,Segoe UI,Arial,sans-serif;overflow-x:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 14px;background:var(--card);border-bottom:2px solid var(--line)}
+header img{width:56px;height:56px;border-radius:50%}.brand{flex:1;min-width:150px;display:flex;flex-direction:column}.brand small{color:var(--soft)}
+.tools{display:flex;gap:8px;flex-wrap:wrap}.tools button{min-height:48px;padding:8px 12px}
+main{max-width:1000px;margin:0 auto;padding:14px}h1{margin:.2em 0 .4em;font-size:1.6em}h2{margin:.2em 0 .5em}
+button,.btn{font:inherit;cursor:pointer;border:2px solid var(--accent);background:var(--card);color:var(--ink);border-radius:14px;padding:12px 16px;min-height:48px;text-decoration:none;display:inline-flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow-wrap:anywhere}
+.btn small,.tile small{font-size:.7em;opacity:.85;margin-top:2px}
+.big{font-size:1.1em;padding:14px 20px;min-height:60px}.wide{width:100%}
+.primary{background:var(--accent);color:#fff;border-color:var(--accent)}body.contrast .primary{color:#000}.accent{border-color:var(--accent2);border-width:3px}
+:focus-visible{outline:4px solid var(--accent2);outline-offset:2px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:16px;margin:12px 0}.card.note{border-color:var(--accent2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:12px 0}
+a.tile{text-decoration:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border:2px solid var(--accent);color:#fff}
+.tile{min-height:120px;font-size:1.05em;font-weight:600;border-radius:18px;padding:12px;gap:6px}.tile .ico{font-size:2em;line-height:1}
+.tiles2{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}.tiles2 .wide{grid-column:1/-1;font-size:1.25em}
+input,select,textarea{font:inherit;width:100%;padding:12px;min-height:54px;border:2px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);margin-top:4px}
+label{display:block;margin:12px 0;font-weight:600}.hint{display:block;color:var(--soft);font-weight:400;font-size:.9em}.center{text-align:center}
+.check{display:flex;align-items:center;gap:12px;font-weight:400}.check input{width:30px;height:30px;min-height:0;margin:0}
+.pin{font-size:2em;letter-spacing:.5em;text-align:center;max-width:280px}.huge{font-size:1.4em}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.actions>*{flex:1 1 160px}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.top h1{margin:0}
+.step{color:var(--soft);font-weight:700;margin:0}
+.bar{height:22px;background:var(--line);border-radius:11px;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent2)}.bar i.over{background:var(--accent)}.small{font-size:.9em;margin:.3em 0}
+ul.list{list-style:none;padding:0;margin:0}ul.list li{border-bottom:1px solid var(--line);padding:10px 0;display:flex;justify-content:space-between;align-items:center;gap:10px}ul.list li span{overflow-wrap:anywhere}
+.msg{color:var(--accent);font-weight:700;min-height:1.5em}.sr{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}
+footer{text-align:center;color:var(--soft);padding:20px;font-size:.85em}
+@media (max-width:480px){main{padding:10px}.tiles{grid-template-columns:repeat(2,1fr)}header img{width:48px;height:48px}.tools{width:100%}.tools button{flex:1}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+ul.list li>button{flex-shrink:0;white-space:nowrap}ul.list li>span{min-width:0}
